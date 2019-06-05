@@ -1,0 +1,9 @@
+<resources>
+    <string name="Intenciones">Intenciones</string>
+    <string name="AbrirWeb">Abrir web</string>
+    <string name="GoogleMaps">Google Maps</string>
+    <string name="TomarFotos">Tomar Fotos</string>
+    <string name="MandarCorreo">Mandar Correo</string>
+    <string name="Telefonear">Telefonear</string>
+    <string name="app_name">app_name</string>
+</resources>

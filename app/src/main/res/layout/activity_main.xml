@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtIntenciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Intenciones"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:hint="@string/AbrirWeb"
+        android:onClick="AbreWeb"
+        android:text="@string/AbrirWeb"
+        app:layout_constraintEnd_toEndOf="@+id/txtIntenciones"
+        app:layout_constraintStart_toStartOf="@+id/txtIntenciones"
+        app:layout_constraintTop_toBottomOf="@+id/txtIntenciones" />
+
+    <Button
+        android:id="@+id/btnGoogleMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/GoogleMaps"
+        android:onClick="GoogleMaps"
+        android:text="Google Maps"
+        app:layout_constraintEnd_toEndOf="@+id/btnWeb"
+        app:layout_constraintStart_toStartOf="@+id/btnWeb"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeb" />
+
+    <Button
+        android:id="@+id/btnTomarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/TomarFotos"
+        android:onClick="TomarFotos"
+        android:text="Tomar Foto"
+        app:layout_constraintEnd_toEndOf="@+id/btnGoogleMaps"
+        app:layout_constraintStart_toStartOf="@+id/btnGoogleMaps"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoogleMaps" />
+
+    <Button
+        android:id="@+id/btnMandarCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/MandarCorreo"
+        android:onClick="MandarCorreo"
+        android:text="Mandar Correo"
+        app:layout_constraintEnd_toEndOf="@+id/btnTomarFoto"
+        app:layout_constraintStart_toStartOf="@+id/btnTomarFoto"
+        app:layout_constraintTop_toBottomOf="@+id/btnTomarFoto" />
+
+    <Button
+        android:id="@+id/btnTelefonear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/Telefonear"
+        android:onClick="Telefonear"
+        android:text="Telefonear"
+        app:layout_constraintEnd_toEndOf="@+id/btnMandarCorreo"
+        app:layout_constraintStart_toStartOf="@+id/btnMandarCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/btnMandarCorreo" />
+
+</android.support.constraint.ConstraintLayout>
